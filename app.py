@@ -19,7 +19,7 @@ creds = Credentials.from_service_account_file(
 
 client = gspread.authorize(creds)
 
-spreadsheet = client.open("spreadsheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1bnVFcZk0A8QikZGUI_Q2sknRSkHWCKxf_IZXWgwOu2Y/edit")
+spreadsheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1bnVFcZk0A8QikZGUI_Q2sknRSkHWCKxf_IZXWgwOu2Y/edit")
 sheet = spreadsheet.worksheet("RESPON_GURU")
 
 # ==============================
